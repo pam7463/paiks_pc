@@ -125,7 +125,11 @@
         <li><a href="#">고객의 소리</a></li>
       </ul>
       <ul class="tgl_btn" onclick="
-       
+       if(document.querySelector('.nav').style.height=='auto'){
+        document.querySelector('.nav').style.height=0;
+       }else{
+        document.querySelector('.nav').style.height='auto';
+       }
       ">
         <li>라인1</li>
         <li>라인2</li>
