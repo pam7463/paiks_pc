@@ -46,7 +46,7 @@
       position:relative;
     }
     .nav{
-      display:block;
+      display:none;
       position:absolute;
       left:0;
       top:100%;
@@ -63,7 +63,6 @@
     .nav>li>a:hover{
       color:gray;
     }
-
 
     .tgl_btn{
       cursor:pointer;
@@ -86,7 +85,7 @@
     }
 
     @media (min-width:640px){
-      .nav{display:block;}
+      .nav{display:block !important;}
       .tgl_btn{display:none;}
     }
 
