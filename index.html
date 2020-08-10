@@ -6,6 +6,8 @@
   <title>빽다방</title>
   <style>
     *{margin:0;border:none;padding:0;}
+    a{text-decoration:none;color:black;}
+    ul,ol,li{list-style:none;}
     .skip{
       width:100%;
       background:cyan;
@@ -41,8 +43,18 @@
       flex-flow:row nowrap;
       justify-content:space-between;
       align-items:center;
+      position:relative;
     }
-    .nav{display:none;}
+    .nav{
+      display:block;
+      position:absolute;
+      left:0;
+      top:100%;
+      background:white;
+      width:100%;
+    }
+    .nav>li{}
+
 
     .tgl_btn{
       cursor:pointer;
