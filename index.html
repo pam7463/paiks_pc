@@ -54,6 +54,9 @@
       overflow:hidden;
       transition:1s;
     }
+    .nav.active{
+      height:400px;
+    }
     .nav>li{
       padding:10px 0;
     }
@@ -126,7 +129,7 @@
         <li><a href="#">고객의 소리</a></li>
       </ul>
       <ul class="tgl_btn" onclick="
-       
+        document.querySelector('.nav').classList.toggle('active');
       ">
         <li>라인1</li>
         <li>라인2</li>
