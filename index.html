@@ -63,6 +63,12 @@
       height:300px;
       background: blue;
     }
+
+    @media (min-width:640px){
+      .nav{display:block;}
+      .tgl_btn{display:none;}
+    }
+
   </style>
 </head>
 <body>
@@ -89,11 +95,11 @@
         <li><a href="#">고객의 소리</a></li>
       </ul>
       <ul class="tgl_btn" onclick="
-        // if(document.querySelector('.nav').style.display=='block'){
-        //   document.querySelector('.nav').style.display='none'; 
-        // }else{
-        //   document.querySelector('.nav').style.display='block';
-        // }
+        if(document.querySelector('.nav').style.display=='block'){
+          document.querySelector('.nav').style.display='none'; 
+        }else{
+          document.querySelector('.nav').style.display='block';
+        }
       ">
         <li>라인1</li>
         <li>라인2</li>
